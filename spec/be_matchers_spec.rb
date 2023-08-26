@@ -17,3 +17,8 @@ RSpec.describe 'be matcher' do
     expect(my_hash[:b]).to be_nil
   end
 end
+# 1. expect({}).to be_empty
+# 2. expect([10,20,30]).to all(be_even)
+# 3. expect([0,1,2]).to all(be >= 0)
+# 4. truthy: 'hello', 0, -10, [], 99.99, :hello, true, [1,2,3]
+#    falsy: false, nil
